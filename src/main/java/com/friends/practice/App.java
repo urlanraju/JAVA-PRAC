@@ -2,6 +2,7 @@ package com.friends.practice;
 
 public class App 
 {
+	// my age field
 	static int age = 12;
 	static String name = "Venkatesh.";
 	int dob = 1994;
