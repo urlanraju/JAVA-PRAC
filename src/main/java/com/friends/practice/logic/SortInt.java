@@ -26,6 +26,5 @@ public class SortInt {
         int arr[] = {6, 10, 5, 4, 9, 120, 4, 6, 10};
         int n = arr.length;
         printDistinct(arr, n);
- 
     }
 }

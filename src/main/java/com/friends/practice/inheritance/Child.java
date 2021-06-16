@@ -7,5 +7,7 @@ public class Child  extends Parent{
 		
 		c.getTotalMembers();
 		System.out.println(c.surname);
+		
+		System.out.println(c.getTotalIncome());
 	}
 }

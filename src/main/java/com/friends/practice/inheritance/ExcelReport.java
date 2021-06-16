@@ -2,7 +2,7 @@ package com.friends.practice.inheritance;
 
 public class ExcelReport implements Report{
 
-	public String getReport() {
+	public String getReport(int col ) {
 		// data from DB
 		
 		//rows and columns

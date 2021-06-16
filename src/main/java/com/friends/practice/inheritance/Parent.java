@@ -2,7 +2,7 @@ package com.friends.practice.inheritance;
 
 public class Parent {
 	
-	protected static String surname;
+	protected static String surname = "Thakur";
 	int flatno;
 	int total;
 	
@@ -23,6 +23,10 @@ public class Parent {
 		
 		//
 		return "Total members in family : "+total;
+	}
+	
+	String getTotalIncome() {
+		return "Parent Family income.";
 	}
 	
 	public static void main(String[] args) {

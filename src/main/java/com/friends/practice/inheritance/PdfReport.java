@@ -2,7 +2,7 @@ package com.friends.practice.inheritance;
 
 public class PdfReport implements Report{
 
-	public String getReport() {
+	public String getReport(int col ) {
 		// gets the records DB
 		
 		//create PDF

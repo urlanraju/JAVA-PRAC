@@ -13,10 +13,10 @@ public class InheritanceExample {
 		
 		
 		Report r1 = new PdfReport();
-		r1.getReport();
+		r1.getReport(2);
 		
 		Report r2 = new ExcelReport();
-		r2.getReport();
+		r2.getReport(2);
 		
 		System.out.println(Parent.surname);
 	}
