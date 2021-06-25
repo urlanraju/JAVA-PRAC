@@ -9,7 +9,7 @@ public class ExceptionHandling {
 	
 	public static int division(int a,int b) throws Exception {
 		if(b == 0) {
-			throw new Exception("Divisor can't be zero");
+			throw new Exception("Divisor can't be zero. input = "+b);
 		}
 		return a/b;
 	}
@@ -18,7 +18,8 @@ public class ExceptionHandling {
 		try {
 			String restDone = work.doRestAPIWork("https://meet.google.com/vcc-ruhp-sey");
 		} catch (IllegalUrlException e) {
-			System.out.println(e.getMessage());
+			System.out.println(e.getInvalidUrl());
+			
 		}
 		
 		String data = work.getDataFromDB(name);
@@ -26,7 +27,7 @@ public class ExceptionHandling {
 	
 		
 		if(name.equalsIgnoreCase("xyz")) {
-			throw new IllegalPersonException("Illegal person i won't give data");
+			throw new IllegalPersonException("Illegal person i won't give data",name);
 		}
 		
 		if(data==null)
@@ -46,8 +47,9 @@ public class ExceptionHandling {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (IllegalPersonException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
+				String illegalP = e.getName();
+				
+				System.out.println(illegalP + " guy is illegal");
 			}
 	}
 }

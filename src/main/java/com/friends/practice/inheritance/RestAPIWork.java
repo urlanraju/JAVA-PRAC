@@ -14,7 +14,7 @@ public class RestAPIWork extends DBAbstract{
 		///
 		
 		if(!url.startsWith("http")) {
-			throw new IllegalUrlException("Not a valid url : "+url);
+			throw new IllegalUrlException("Not a valid url : ",url);
 		}
 		return "Rest API work done "+data;
 	}

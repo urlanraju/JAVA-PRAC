@@ -12,6 +12,7 @@ public class ExcelReport implements Report{
 	}
 
 	public String getReportName() {
+		System.out.println(Parent.surname);
 		// TODO Auto-generated method stub
 		return null;
 	}

@@ -14,5 +14,8 @@ public class NegativeSort {
 	public static void main(String[] args) {
 		
 	}
-
+	
+	public static void normalSort() {
+		
+	}
 }

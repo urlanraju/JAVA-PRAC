@@ -25,7 +25,7 @@ public class Parent {
 		return "Total members in family : "+total;
 	}
 	
-	String getTotalIncome() {
+	public String getTotalIncome() {
 		return "Parent Family income.";
 	}
 	
