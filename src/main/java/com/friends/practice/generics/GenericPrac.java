@@ -28,7 +28,7 @@ public class GenericPrac<T> {
 		
 		
 		Object o1 = new Employee(100, "Venkatesh");
-		Object o2 = new Student(101, "Mahesh");
+		Object o2 = new Student(100, "Venkatesh", "Urlana", "urlanraju@gmail.com");
 		
 		
 		
@@ -64,31 +64,12 @@ class Employee{
 	public void setName(String name) {
 		this.name = name;
 	}
+	@Override
+	public String toString() {
+		return "Employee [eid=" + eid + ", name=" + name + "]";
+	}
 	
 	// sht + alt + s
 	
 }
 
-class Student{
-	int sid;
-	String name;
-	public int getSid() {
-		return sid;
-	}
-	public void setSid(int sid) {
-		this.sid = sid;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	public Student(int sid, String name) {
-		super();
-		this.sid = sid;
-		this.name = name;
-	}
-	
-	
-}

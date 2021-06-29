@@ -31,7 +31,8 @@ public class ListPrac {
 		System.out.println(ranks.length);
 
 		// [1,24,5,67,8,9]
-
+		
+		System.out.println(ranks);
 		System.out.println(ranks[2]);
 		//System.out.println(ranks[243543436]); // random access
 		List<String> countries = new ArrayList<String>();
