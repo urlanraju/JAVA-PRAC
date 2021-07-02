@@ -1,9 +1,7 @@
 package com.friends.practice.generics;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 public class GenericPrac<T> {
 
@@ -43,33 +41,3 @@ public class GenericPrac<T> {
 	}
 
 }
-
-class Employee{
-	int eid;
-	String name;
-	public Employee(int eid, String name) {
-		super();
-		this.eid = eid;
-		this.name = name;
-	}
-	public int getEid() {
-		return eid;
-	}
-	public void setEid(int eid) {
-		this.eid = eid;
-	}
-	public String getName() {
-		return name;
-	}
-	public void setName(String name) {
-		this.name = name;
-	}
-	@Override
-	public String toString() {
-		return "Employee [eid=" + eid + ", name=" + name + "]";
-	}
-	
-	// sht + alt + s
-	
-}
-

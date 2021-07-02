@@ -1,9 +1,6 @@
 package com.friends.practice.collections;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.HashSet;
-import java.util.List;
 import java.util.Map;
 import java.util.Set;
 
@@ -25,7 +22,10 @@ public class MapPrac {
 		map.put(4, "Suresh");
 
 		map.put(3, "Kalpesh");
+		
 		map.put(11, "Eleven");
+		
+		map.put(11, "new Eleven");
 
 		System.out.println(map);
 		
